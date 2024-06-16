@@ -1,0 +1,450 @@
+/****** General ***********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: auto;
+    max-width: 1440px;
+    min-width: 1025px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+section {
+    margin-bottom: 35px;
+    margin-left: 30px;
+}
+
+div.filtresGlobal > h2 {
+    font-size: 18px;
+}
+
+footer > div.globalFooter > div.sectionFooter > h2 {
+    font-size: 18px;
+}
+
+/****** Header ***********/
+.header {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px;
+    margin-bottom: 35px;
+}
+
+.bookiLogo {
+    width: 61.09px;
+    height: 19px;
+    margin-left: 30px;
+}
+
+.menu {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    gap: 68px;
+    padding: 28px;
+    border-top: 2px solid #ffffff;
+}
+
+.menu a:hover {
+    border-top: 2px solid;
+    color: #0065FC;
+    position: relative;
+    /*bottom: 1.5px;*/
+}
+
+/****** Section Recherche ***********/
+
+/** Section Recherche dans sa globalité, Titre + Paragraphe +
+    Formulaire barre de recherche + Filtres + Info logement **/
+.mainSearch {
+    display: flex;
+    flex-direction: column;
+    width: 1355px;
+    height: 281px;
+    gap: 35px;
+}
+
+/** Titre + Paragraphe **/
+.sectionOne {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/** Formulaire barre de recherche **/
+.sectionSearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px;
+    color: #F2F2F2;
+    border-radius: 15px;
+    width: 377px;
+    height: 49px;
+}
+
+.fa-location-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    border: 1px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    cursor: pointer;
+}
+
+.fa-location-dot:hover {
+    transform: scale(1.1);
+}
+
+.searchBar {
+    border: 1px;
+    font-size: 18px;
+    text-align: center;
+    width: 190px;
+    height: 47px;
+    font-weight: bold;
+    outline: none;
+}
+
+.buttonSearch {
+    font-size: 18px;
+    color: #ffffff;
+    border: 1px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    padding: 15px 16px 15px 16px;
+    width: 132px;
+    height: 49px;
+    gap: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttonSearch:hover {
+    background-color: #002864;
+}
+
+/** Filtres **/
+.filtresGlobal {
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filtresGlobal a {
+    text-decoration: none;
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: solid 2px;
+    border-radius: 25px;
+    height: 40px;
+    padding: 4px 19px 4px 19px;
+    color: #D9D9D9;
+    cursor: pointer;
+}
+
+.filtre p {
+    color: #000000;
+}
+
+.filtreLogo {
+    color: #0065FC;
+}
+
+.filtre:hover {
+    background-color: #DEEBFF;
+}
+
+/** Info Logement **/
+.infoLogement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    font-size: 10px;
+    border: solid 1px;
+    border-color: #D9D9D9;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.infoLogement p {
+    font-size: 16px;
+}
+
+/****** 1ère partie - Section Hébergement ***********/
+
+/** Général **/
+.mainHebergement {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.mainHebergement a {
+    text-decoration: none;
+}
+
+.mainHebergement p {
+    font-size: 14px;
+}
+
+.mainHebergement .modifText {
+    font-size: 16px;
+}
+
+/** Réglage Cases **/
+.globalHebergement {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #F2F2F2;
+    height: 650px;
+}
+
+.alignCases {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.affiches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 5px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.affiches img {
+    width: 250.33px;
+    height: 124px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.affiches:hover {
+    transform: scale(1.1);
+}
+
+.textStar {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px 15px 0px;
+    padding: 0px 15px 0px 15px;
+    gap: 8px;
+    color: #000000;
+}
+
+.modifText {
+    font-weight: bold;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    color: #0065FC;
+}
+
+.fa-star {
+    font-size: 14px;
+}
+
+.greyStar {
+    color: #F2F2F2;
+}
+
+.globalHebergement h3 {
+    width: 107px;
+}
+
+.globalHebergement h3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/****** 2ème partie - Section Hébergement ***********/
+
+/** Aside - Contenu supplémentaire **/
+.globalAside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-color: #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    height: 650px;
+    padding: 30px;
+}
+
+.headAside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-chart-line{
+    color: #0065FC;
+}
+
+.globalAffichesPopulaires{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.affichesPopulaires {
+    display: flex;
+    align-items: center;
+    border: solid 5px;
+    border-radius: 20px;
+    width: 369px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.affichesPopulaires img {
+    width: 123px;
+    height: 146px;
+    border: 1px;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+}
+
+.affichesPopulaires:hover {
+    transform: scale(1.1);
+}
+
+.textStarPopulaires {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 0px 15px;
+    gap: 8px;
+    color: #000000;
+}
+
+.textStarPopulaires .star {
+    padding-top: 60px;
+}
+
+/****** Section Activités ***********/
+
+.mainActivity {
+    padding: 30px;
+}
+
+.mainActivity a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.globalActivity {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.alignActivity {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.affichesActivity {
+    display: flex;
+    flex-direction: column;
+    width: 297.5px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #0000002a;
+}
+
+.affichesActivity img {
+    width: 297.5px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.affichesActivity p {
+    padding: 20px 0px 20px 20px;
+}
+
+.affichesActivity:hover {
+    transform: scale(1.1);
+}
+
+/****** Footer ***********/
+.globalFooter {
+    display: flex;
+    align-items: flex-start;
+    border: solid #F2F2F2;
+    background-color: #F2F2F2;
+    width: 1410px;
+    padding: 20px;
+    gap: 290px;
+}
+
+.sectionFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sectionFooter a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.sectionFooter a:hover {
+    text-decoration: underline;
+}
